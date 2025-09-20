@@ -1,84 +1,129 @@
 <!DOCTYPE html>
+<html lang="id">
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Kalori Seimbang</title>
 </head>
 <body>
   <header>
+    <div style="text-align:center;">
     <img src="kemenkes.png" alt="Logo" width="120"><br>
     <h1>KEBUTUHAN KALORI HARIAN</h1>
     <nav>
       <ul>
-        <li><a href="beranda.html"><button>Beranda</button></a></li>
+        <li><a href="hitungBMR.html"><button>Beranda</button></a></li>
         <li><a href="jenismakanan.html"><button>Jenis Makanan</button></a></li>
-        <li><a href="hitungBMR.html"><button>Hitung BMR</button></a></li>
       </ul>
     </nav>
+    </div>
+  </header>
 
   <main>
     <section>
-      <center>
-        <h2>Hitung BMR Anda</h2>
+      <table border="1" width="750" cellspacing="0" cellpadding="5" align="center">
+        <!-- Data Pengguna -->
+        <tr>
+          <td colspan="2">Nama Pengguna: <input type="text"></td>
+          <td colspan="2">Tanggal Perhitungan: <input type="date"></td>
+        </tr>
 
-        <form action="#" method="post">
-          <label for="name">Nama </label>
-          <input type="text" id="name" name="name" placeholder="nama lengkap anda" required >
-          <br >
-          <label for="Tanggal perhitungan">Email </label>
-          <input type="date" id="Tanggal perhitungan" name="Tanggal perhitungan" placeholder="hari ini" required >
-          <br >
-          <label for="age">Usia (tahun) </label>
-          <input type="number" id="age" name="age" placeholder="Thn" required >
-          <br >
-        </form>
+        <!-- Judul Kalkulator -->
+        <tr>
+          <td colspan="2">Kalkulator kebutuhan kalori</td>
+          <td colspan="2">Metode: Mifflin-St Jeor</td>
+        </tr>
 
-        <h2>Kalkulator Kebutuhan Kalori</h2>
+        <!-- Header tabel -->
+        <tr align="center">
+          <th>Data</th>
+          <th>Input</th>
+          <th>Satuan</th>
+          <th>Keterangan</th>
+        </tr>
 
-        <form action="#" method="post">
-          <label for="jenis Kelamin">Jenis Kelamin </label>
-          <select id="jenis Kelamin" name="jenis Kelamin" required >
-            <option value="pria">Pria</option>
-            <option value="wanita">Wanita</option>
-          </select>
-          <br >
-          <label for="weight">Berat Badan (kg) </label>
-          <input type="number" id="weight" name="weight" placeholder="kg" required >
-          <br >
-          <label for="height">Tinggi Badan (cm) </label>
-          <input type="number" id="height" name="height" placeholder="cm" required >
-          <br >
-          <label for="activity">Tingkat Aktivitas Fisik </label>
-          <select id="activity" name="activity" required >
-            <option value="sedentary">Sedentary (sedikit atau tidak ada latihan)</option>
-            <option value="lightly active">Lightly active (latihan ringan/sedang 1-3 hari/minggu)</option>
-            <option value="moderately active">Moderately active (latihan sedang 3-5 hari/minggu)</option>
-            <option value="very active">Very active (latihan keras 6-7 hari/minggu)</option>
-            <option value="extra active">Extra active (latihan sangat keras & pekerjaan fisik)</option>
-          </select>
-          <br >
-          <button type="submit">hitung BMR</button>
-        </form>
-        <br >
-        <h3>BMR (Basal Metabolic Rate): </h3>
-        <td>--- kcal</td>
-        <h3>Kebutuhan Kalori Harian:</h3> 
-        <td>--- kcal</td>
-      </center>
+        <!-- Input data -->
+        <tr>
+          <td>Jenis Kelamin</td>
+          <td>
+            <select>
+              <option value="">Pilih</option>
+              <option value="male">Laki-laki</option>
+              <option value="female">Perempuan</option>
+            </select>
+          </td>
+          <td>-</td>
+          <td>Pilih salah satu</td>
+        </tr>
+
+        <tr>
+          <td>Umur</td>
+          <td><input type="number" style="width:80px;"></td>
+          <td>Tahun</td>
+          <td>Isi umur Anda</td>
+        </tr>
+
+        <tr>
+          <td>Tinggi Badan</td>
+          <td><input type="number" style="width:80px;"></td>
+          <td>cm</td>
+          <td>Isi tinggi badan</td>
+        </tr>
+
+        <tr>
+          <td>Berat Badan</td>
+          <td><input type="number" style="width:80px;"></td>
+          <td>kg</td>
+          <td>Isi berat badan</td>
+        </tr>
+
+        <tr>
+          <td>Aktivitas</td>
+          <td>
+            <select>
+              <option value="">Pilih</option>
+              <option>Sedikit / Ringan</option>
+              <option>Sedang</option>
+              <option>Tinggi</option>
+            </select>
+          </td>
+          <td>-</td>
+          <td>Tingkat aktivitas harian</td>
+        </tr>
+
+        <!-- Hasil -->
+        <tr>
+          <td colspan="3"><b>BMR (Basal Metabolic Rate): ---</b></td>
+          <td>--- kcal</td>
+        </tr>
+
+        <tr>
+          <td colspan="3"><b>Kebutuhan Kalori Harian: ---</b></td>
+          <td>--- kcal</td>
+        </tr>
+
+        <!-- Tombol -->
+        <tr>
+          <td colspan="4" align="center">
+            <button type="button">Hitung Kalori</button>
+          </td>
+        </tr>
+      </table>
     </section>
   </main>
 
-    <footer>
-        <p>Ayu Azzhahra Alwi 2409106022</p>
-        <p>Praktikum PemWeb A1'24 (POSTTEST 1)</p>
-        <p>&copy; 2024 Kalori Seimbang</p>
-        <a href="https://hellosehat.com/health-tools/kebutuhan-kalori/">Sumber</a>
-    </footer>
+  <footer>
+    <div style="text-align:center; margin-top:10px;">
+      <p>Ayu Azzhahra Alwi 2409106022</p>
+      <p>Praktikum PemWeb A1'24 (POSTTEST 1)</p>
+      <a href="https://hellosehat.com/health-tools/kebutuhan-kalori/">
+        &copy; KaloriSehat.com
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
-          
-
-
- 
+      
 
     
 
