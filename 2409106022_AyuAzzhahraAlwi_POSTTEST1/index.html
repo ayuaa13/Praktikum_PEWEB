@@ -21,34 +21,83 @@
       <h2>Kalkulator BMR & Kalori Harian</h2>
       <p>Metode: Mifflin-St Jeor</p>
       <form>
-        <label>Nama Pengguna: <input type="text"></label><br>
-        <label>Tanggal Perhitungan: <input type="date"></label><br><br>
+        <table border="1" cellspacing="0" cellpadding="5">
+          <tr>
+            <td colspan="2">Nama Pengguna: <input type="text"></td>
+            <td colspan="2">Tanggal Perhitungan: <input type="date"></td>
+          </tr>
 
-        <label>Jenis Kelamin:
-          <select>
-            <option value="">Pilih</option>
-            <option value="male">Laki-laki</option>
-            <option value="female">Perempuan</option>
-          </select>
-        </label><br>
+          <tr>
+            <th>Data</th>
+            <th>Input</th>
+            <th>Satuan</th>
+            <th>Keterangan</th>
+          </tr>
 
-        <label>Umur: <input type="number"> Tahun</label><br>
-        <label>Tinggi Badan: <input type="number"> cm</label><br>
-        <label>Berat Badan: <input type="number"> kg</label><br>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>
+              <select>
+                <option value="">Pilih</option>
+                <option value="male">Laki-laki</option>
+                <option value="female">Perempuan</option>
+              </select>
+            </td>
+            <td>-</td>
+            <td>Pilih salah satu</td>
+          </tr>
 
-        <label>Aktivitas:
-          <select>
-            <option value="">Pilih</option>
-            <option value="ringan">Sedikit / Ringan</option>
-            <option value="sedang">Sedang</option>
-            <option value="tinggi">Tinggi</option>
-          </select>
-        </label><br><br>
+          <tr>
+            <td>Umur</td>
+            <td><input type="number"></td>
+            <td>Tahun</td>
+            <td>Isi umur Anda</td>
+          </tr>
 
-        <p><b>BMR (Basal Metabolic Rate): --- kcal</b></p>
-        <p><b>Kebutuhan Kalori Harian: --- kcal</b></p>
+          <tr>
+            <td>Tinggi Badan</td>
+            <td><input type="number"></td>
+            <td>cm</td>
+            <td>Isi tinggi badan</td>
+          </tr>
 
-        <button type="submit">Hitung Kalori</button>
+          <tr>
+            <td>Berat Badan</td>
+            <td><input type="number"></td>
+            <td>kg</td>
+            <td>Isi berat badan</td>
+          </tr>
+
+          <tr>
+            <td>Aktivitas</td>
+            <td>
+              <select>
+                <option value="">Pilih</option>
+                <option value="ringan">Sedikit / Ringan</option>
+                <option value="sedang">Sedang</option>
+                <option value="tinggi">Tinggi</option>
+              </select>
+            </td>
+            <td>-</td>
+            <td>Tingkat aktivitas harian</td>
+          </tr>
+
+          <tr>
+            <td colspan="3"><b>BMR (Basal Metabolic Rate): ---</b></td>
+            <td>--- kcal</td>
+          </tr>
+
+          <tr>
+            <td colspan="3"><b>Kebutuhan Kalori Harian: ---</b></td>
+            <td>--- kcal</td>
+          </tr>
+
+          <tr>
+            <td colspan="4" align="center">
+              <button type="submit">Hitung Kalori</button>
+            </td>
+          </tr>
+        </table>
       </form>
     </section>
 
