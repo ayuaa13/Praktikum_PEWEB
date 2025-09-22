@@ -8,7 +8,7 @@
 body {
   line-height: 1.6;
   color: #333;
-  background-color: #fdfdfd;
+  background-color: #d8f2f7;
 }
 
 header {
@@ -34,14 +34,14 @@ nav ul {
 }
 
 nav a {
-  color: #fff;
+  color: #2f3c91;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #ffd54f;
+  color: #f5f4f2;
 }
 
 .container {
