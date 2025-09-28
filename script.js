@@ -1,14 +1,14 @@
-// Ambil elemen dari DOM
-const genderInput = document.querySelector("select:nth-of-type(1)");
-const ageInput = document.querySelector("input[placeholder='Umur']");
-const heightInput = document.querySelector("input[placeholder='Tinggi']");
-const weightInput = document.querySelector("input[placeholder='Berat']");
-const activityInput = document.querySelector("select:nth-of-type(2)");
-const resultBMR = document.querySelector("section h3:nth-of-type(1)");
-const resultCalories = document.querySelector("section h3:nth-of-type(2)");
-const calcBtn = document.querySelector(".btn-primary");
+// Ambil elemen dari DOM berdasarkan id
+const genderInput = document.getElementById("gender");
+const ageInput = document.getElementById("age");
+const heightInput = document.getElementById("height");
+const weightInput = document.getElementById("weight");
+const activityInput = document.getElementById("activity");
+const resultBMR = document.getElementById("resultBMR");
+const resultCalories = document.getElementById("resultCalories");
+const calcBtn = document.getElementById("calcBtn");
 
-// Faktor aktivitas
+// Faktor aktivitas (PAL values)
 const activityFactor = {
   "Sedentary": 1.2,
   "Lightly Active": 1.375,
@@ -17,7 +17,7 @@ const activityFactor = {
   "Extra Active": 1.9
 };
 
-// Event listener tombol "Hitung Kalori"
+// Event listener untuk tombol "Hitung Kalori"
 calcBtn.addEventListener("click", function () {
   const gender = genderInput.value;
   const age = parseInt(ageInput.value);
@@ -26,7 +26,7 @@ calcBtn.addEventListener("click", function () {
   const activity = activityInput.value;
 
   // Validasi input
-  if (!gender || gender === "Pilih" || !age || !height || !weight || !activity || activity === "Pilih") {
+  if (gender === "Pilih" || !age || !height || !weight || activity === "Pilih") {
     alert("⚠️ Harap lengkapi semua data sebelum menghitung!");
     return;
   }
