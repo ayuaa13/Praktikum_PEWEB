@@ -23,7 +23,7 @@ if (!isset($_SESSION['username'])) {
       <p>Halo, <b><?= htmlspecialchars($_SESSION['username']); ?></b>!</p>
       <nav>
         <ul>
-          <li><a href="beranda.php">Beranda</a></li>
+          <li><a href="index.php">Beranda</a></li>
           <li><a href="#hitungBMR">Hitung BMR</a></li>
           <li><a href="#jenismakanan">Jenis Makanan</a></li>
           <li><a href="#tips">Tips</a></li>

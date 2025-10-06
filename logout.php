@@ -1,6 +1,6 @@
 <?php
 session_start();
 session_destroy();
-header("Location: beranda.php?logout=success");
+header("Location: index.php?logout=success");
 exit;
 ?>

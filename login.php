@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <button type="submit" class="btn btn-primary">Login</button>
     </form>
     <p class="note">Gunakan username: <b>admin</b>, password: <b>123</b></p>
-    <a href="beranda.php" class="btn btn-secondary">Kembali</a>
+    <a href="index.php" class="btn btn-secondary">Kembali</a>
   </div>
 </body>
 </html>
