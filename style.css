@@ -202,6 +202,7 @@ footer a:hover {
   }
 }
 
+/* Header Beranda */
 .header-home {
   background: linear-gradient(135deg, #2196f3, #1976d2);
   color: #fff;
@@ -234,58 +235,4 @@ footer a:hover {
 
 .btn-secondary:hover {
   background: #e3f2fd;
-}
-
-.login-btn {
-  background: #fff;
-  color: #1976d2;
-  border-radius: 25px;
-  padding: 8px 18px;
-  font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  text-decoration: none;
-}
-
-.login-btn:hover {
-  background: #e3f2fd;
-}
-
-#jenismakanan table {
-  margin-top: 20px;
-  border-collapse: collapse;
-}
-
-#jenismakanan th, #jenismakanan td {
-  border: 1px solid #ddd;
-  padding: 10px;
-}
-
-#jenismakanan th {
-  background: #1976d2;
-  color: white;
-}
-
-.tips-container {
-  max-width: 600px;
-  margin: 40px auto;
-  background: #f5f5f5;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-}
-
-.logout-btn {
-  background: #fff;
-  color: #1976d2;
-  border: none;
-  border-radius: 25px;
-  padding: 8px 18px;
-  font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: all 0.3s;
-}
-
-.logout-btn:hover {
-  background: #e3f2fd;
-  transform: translateY(-2px);
 }
